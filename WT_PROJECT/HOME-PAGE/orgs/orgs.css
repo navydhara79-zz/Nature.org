@@ -1,0 +1,84 @@
+body{
+    /* background: rgb(255, 211, 204); */
+    background: #fef9c7;
+    font-family: "Nunito", sans-serif;
+}
+#rale{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 4px;
+    text-transform: uppercase;
+}
+.redd{
+    color: black;
+    font-weight: 100;
+    
+}
+#hello{
+    color: black;
+}
+#mainnavbar .navbar-brand{
+    color: #EA1C2C;
+    
+}
+#navlinks .nav-item{
+    font-size: 20px;
+}
+
+#mainnavbar .nav-link{
+    color: rgb(0, 0, 0);
+}
+
+#mainnavbar .nav-link:hover{
+    color: #EA1C2C;
+}
+
+#mainnavbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#span span{
+    color: #EA1C2C;
+}
+
+#span .name{
+    color: rgba(255, 0, 0, 0.507);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+
+}
+
+.awesome{
+    color: #EA1C2C;
+    font-size: 2.5rem;
+}
+
+.check{
+    color: rgb(80, 74, 77);
+    font-weight: 100;
+}
+
+.con{
+    margin-top: 100px;
+}
+
+.navbar.scrolled{
+    background: #ffccbc;
+}
+
+#foot{
+    height: 50px;
+    background: rgb(255, 255, 255);
+    color: blanchedalmond;
+    
+}
+
+#log{
+    margin-top: 10px;
+    padding: 1px;
+    height: 25px;
+    width: 25px;
+    color: white;
+}
+#footer{
+    display: inline;
+}

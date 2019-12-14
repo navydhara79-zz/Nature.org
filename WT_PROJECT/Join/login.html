@@ -1,0 +1,74 @@
+<?php
+$host = "localhost";
+$user="root";
+$password = "";
+$db = "login";
+
+mysql_connect($host,$user,$password);
+mysql_select_db($db)
+
+if(isset($_POST['email'])){
+	$uname = $_POST['email'];
+	$password = $_POST['password'];
+
+	$sql = "select * from loginform where email = '".$uname."'AND password= '".$password."'
+	limit 1";
+	$result=mysql_query($sql);
+
+	if(mysql_num_rows($result)==1){
+		echo "You have successfully logged in";
+		exit(); 
+	}
+
+	else{
+		echo "no";
+		exit();
+	}
+
+
+}
+
+?>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Register form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style.css">
+	<style>eaa
+		img{
+			height: 50px;
+			margin-top: 50px;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Amiri|Cinzel|Cormorant|Cormorant+Garamond|Fascinate+Inline|Lora|Merriweather|Montserrat|Nunito|Oswald|PT+Serif|Philosopher|Poppins|Raleway|Satisfy|Special+Elite|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	<form action="#" method="POST">
+		<h1 style="color: rgb(144, 177, 67);">Welcome Back :)</h1>
+		<br>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+		<br>
+		<label for="pass">Password</label>
+		<input type="password" name="password" id="pass" required>
+		<br>
+		<input type="submit" name="submit" value="Log In" id="login">
+		<p>If you are not register member please<button id="reg"><a href="signup.html">Register</a></button></p>
+	</form>
+
+
+</body>
+</html>

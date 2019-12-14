@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Register form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+				img{
+			height: 50px;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	
+
+	<form action="/HOME-PAGE/index.html">
+			<h1 style="color: rgb(144, 177, 67);">Hello There :)</h1>
+	
+	<center>	<h1>or</h1>
+	</center>
+	<br>
+		<label for="user">User Name</label>
+		<input type="text" name="" id="user" required>
+		<br>
+		<label for="email">Email</label>
+		<input type="email" name="" id="email" required>
+		<br>
+		<label for="pass">Password</label>
+		<input type="password" name="" id="pass" required>
+		<br>
+		<label for="phone">Phone</label>
+		<input type="text" name="" id="phone" required>
+		<br>
+		<input type="submit"  value="Sign-up" id="signup" onsubmit="back()">
+		<p>If you are registered member please <button id="reg"><a href="login.html">Log In Here</a></button></p>
+		
+	</form>
+	<script>
+		function back(){
+			alert("hurry");
+		}
+	</script>
+</body>
+</html>
